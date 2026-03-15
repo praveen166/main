@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen Maraboina | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Roboto', sans-serif; background:#141414; color:#fff; overflow-x:hidden; }
+    a { text-decoration:none; color:#1db954; }
+
+    /* Header */
+    header { display:flex; justify-content:space-between; align-items:center; padding:1rem 3rem; background:#111; position:sticky; top:0; z-index:1000; }
+    header h1 { font-size:1.8rem; color:#1db954; }
+    nav a { margin-left:2rem; font-weight:500; transition:0.3s; }
+    nav a:hover { color:#fff; }
+
+    /* Hero Section */
+    .hero { display:flex; flex-direction:column; justify-content:center; align-items:center; height:80vh; text-align:center; background:linear-gradient(90deg,#1db95433,#111); }
+    .hero h2 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.2rem; margin-bottom:2rem; max-width:600px; }
+    .hero a.button { padding:0.8rem 2rem; border:2px solid #1db954; border-radius:25px; font-weight:700; transition:0.3s; }
+    .hero a.button:hover { background:#1db954; color:#111; }
+
+    /* Section Titles */
+    section { padding:3rem 2rem; }
+    section h2 { font-size:2rem; margin-bottom:1.5rem; color:#1db954; }
+
+    /* Netflix-Style Horizontal Scroll Projects */
+    .project-row { display:flex; overflow-x:auto; gap:1.5rem; padding-bottom:1rem; scrollbar-width:none; -ms-overflow-style:none; }
+    .project-row::-webkit-scrollbar { display:none; }
+
+    .project-card { flex:0 0 auto; width:300px; height:200px; background:#1a1a1a; border-radius:10px; position:relative; cursor:pointer; transition:transform 0.3s; }
+    .project-card:hover { transform:scale(1.1); }
+    .project-card img { width:100%; height:100%; border-radius:10px; object-fit:cover; }
+    .project-info { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.7); padding:0.8rem; border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+    .project-info h3 { font-size:1rem; margin-bottom:0.3rem; color:#1db954; }
+    .project-info p { font-size:0.8rem; line-height:1.2; }
+    .project-info a { display:block; margin-top:0.5rem; font-size:0.8rem; color:#fff; }
+
+    /* Skills Section */
+    #skills p { margin-bottom:0.5rem; }
+
+    /* Contact Section */
+    .contact { text-align:center; margin-top:1rem; }
+    .contact a { display:inline-block; margin:0.5rem; padding:0.5rem 1rem; border:1px solid #1db954; border-radius:20px; transition:0.3s; }
+    .contact a:hover { background:#1db954; color:#111; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .hero h2 { font-size:2rem; }
+      .hero p { font-size:1rem; }
+      .project-card { width:220px; height:150px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Praveen Maraboina</h1>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Data Analyst | Python & SQL</h2>
+  <p>Transforming raw datasets into actionable insights using Python, SQL, and Power BI. Explore my projects below.</p>
+  <a class="button" href="#projects">View Projects</a>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-row">
+    <div class="project-card">
+      <img src="https://source.unsplash.com/300x200/?data,chart" alt="Sales Data Analysis">
+      <div class="project-info">
+        <h3>Sales Data Analysis</h3>
+        <p>Analyzed retail sales data, built visualizations & Power BI dashboards.</p>
+        <a href="https://github.com/praveenmaraboina/sales-data-analysis" target="_blank">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://source.unsplash.com/300x200/?analytics,customer" alt="Customer Churn Analysis">
+      <div class="project-info">
+        <h3>Customer Churn Analysis</h3>
+        <p>EDA & dashboards for customer churn & retention analysis.</p>
+        <a href="https://github.com/praveenmaraboina/customer-churn-analysis" target="_blank">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://source.unsplash.com/300x200/?nutrition,food" alt="Cereal Nutrition Analysis">
+      <div class="project-info">
+        <h3>Cereal Nutrition Analysis</h3>
+        <p>Regression model to analyze nutrition ratings & visualize insights.</p>
+        <a href="https://github.com/praveenmaraboina/cereal-nutrition-analysis" target="_blank">View Code</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p><strong>Programming:</strong> Python, SQL</p>
+  <p><strong>Data Analysis:</strong> Data Cleaning, EDA, Statistical Analysis</p>
+  <p><strong>Python Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</p>
+  <p><strong>Databases:</strong> MySQL</p>
+  <p><strong>Visualization:</strong> Power BI, Excel</p>
+  <p><strong>Tools:</strong> Jupyter Notebook, Git, GitHub</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <a href="mailto:praveenmaraboina22@gmail.com">Email Me</a>
+    <a href="https://github.com/praveenmaraboina" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/praveenmaraboina" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+</body>
+</html>
